@@ -6,6 +6,7 @@ typedef unsigned char int8;
 typedef unsigned short int int16;
 typedef unsigned int int32;
 typedef unsigned long long int int64;
+typedef void (*callback)(connection*)
 
 #define public  __attribute__((visibility("default")))
 #define private __attribute__((visibility("hidden"))) static
@@ -17,6 +18,13 @@ typedef unsigned long long int int64;
 #define $4 (int32)
 #define $8 (int64)
 
+struct s_connection {
+    int32 fd;
+    int8 host[16];
+    int16 port;
+};
+typedef struct s_connection connection;
+
 struct s_server {
     int32 fd;
 };
@@ -24,3 +32,5 @@ typedef struct s_server server;
 
 int main(void);
 public server *tcpserver(int16, callback);
+
+private sandbox(connection*)
