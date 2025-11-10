@@ -1,0 +1,11 @@
+flags: = -02 -Wall -I
+all: server
+
+server: server.o
+	gcc $(flags) server.o -o server
+
+server.o: server.c
+	gcc $(flags) -c server.c
+
+clean:
+	rm -f *.o server
