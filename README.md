@@ -1,9 +1,9 @@
-# CWire
+# SynAck
 A minimal TCP server library written in C.  
 Direct, portable, and built for engineers who prefer control over convenience.
 
 ## Overview
-CWire abstracts the repetitive setup of TCP sockets while preserving full system-level control.  
+SynAck abstracts the repetitive setup of TCP sockets while preserving full system-level control.  
 It allows creating robust network servers with only a few lines of code, ideal for systems and embedded development.
 
 ## Features
@@ -14,5 +14,5 @@ It allows creating robust network servers with only a few lines of code, ideal f
 - Cross-platform POSIX compatibility.
 
 ## Philosophy
-CWire is designed for those who value predictability and performance over abstractions.  
+SynAck is designed for those who value predictability and performance over abstractions.  
 No frameworks, no dependencies — just the wire and your C code.
