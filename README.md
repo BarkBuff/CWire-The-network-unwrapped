@@ -1,9 +1,9 @@
-# SynAck
+# CLattice Network Sockets
 A minimal TCP server library written in C.  
 Direct, portable, and built for engineers who prefer control over convenience.
 
 ## Overview
-SynAck abstracts the repetitive setup of TCP sockets while preserving full system-level control.  
+CLattice Network Sockets abstracts the repetitive setup of TCP sockets while preserving full system-level control.  
 It allows creating robust network servers with only a few lines of code, ideal for systems and embedded development.
 
 ## Features
